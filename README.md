@@ -21,8 +21,11 @@ This repository contains custom PHP/JavaScript code snippets to enhance the func
 ## Usage
 1. Install the [Forminator plugin](https://wordpress.org/plugins/forminator/) on your WordPress site.
 2. Add either script to your WordPress site using a plugin like [Code Snippets](https://wordpress.org/plugins/code-snippets/) or your theme’s `functions.php`.
-3. Adjust field names in the script (e.g., `text-3`, `text-8`, `text-4`, `text-9`) to match your Forminator form fields.
-4. Test on the relevant form page (e.g., Page 6 of `[forminator_form id="ABCD"]`).
+3. Adjust the form ID `[forminator_form id="ABCD"]` to your form ID. Just replace ABCD with the number from the shortcode
+4. Adjust field names in the script (e.g., `text-3`, `text-8`, `text-4`, `text-9`) to match your Forminator form fields.
+5. In my code, `text-3` and `text-8` are fields where the user enters `bank account number` and `confirm bank account number`, respectively. In your case, these field IDs may be different.
+6. you need to add a hidden field between the 2 fields you want to verify. ie `bank account number` `hidden-1` `confirm bank account number` [`{text-3}` `{hidden-1}` `{text-8}`]
+7. Test on the relevant form page the respective form `[forminator_form id="ABCD"]`).
 
 ## Credits
 - **Developed with assistance from**: Grok 3, built by [xAI](https://xai.ai/). Grok provided invaluable debugging, optimization, and logic structuring throughout the development process.
