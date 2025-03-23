@@ -137,7 +137,7 @@ function custom_forminator_field_validation_script() {
         // Configuration for multiple forms
         const formConfigs = [
             {
-                formId: 'ABCD', // [forminator_form id="ABCD"]
+                formId: 'ABCD', // [forminator_form id="ABCD"] replace with your form ID
                 fieldPairs: [
                     {
                         firstField: 'text-3',
@@ -154,7 +154,7 @@ function custom_forminator_field_validation_script() {
                 ]
             },
             {
-                formId: '9300', // Example: [forminator_form id="9300"]
+                formId: '9300', // Example: [forminator_form id="9300"] replace with your form ID
                 fieldPairs: [
                     {
                         firstField: 'text-1',
