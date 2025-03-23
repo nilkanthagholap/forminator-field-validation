@@ -10,23 +10,23 @@ function custom_forminator_bank_account_script() {
             console.log('Injecting CSS once');
             var style = document.createElement('style');
             style.id = 'bank-account-styles';
-            style.textContent = '.forminator-custom-form-9281 .forminator-input{width:100%;max-width:300px;padding:10px;border:1px solid #ccc;border-radius:4px;}' +
-                                '.forminator-custom-form-9281 .forminator-input:disabled{color:#888;background-color:#f5f5f5;}' +
-                                '.forminator-custom-form-9281 .bank-error-message{color:red;font-size:14px;margin-top:5px;display:none;}' +
-                                '.forminator-custom-form-9281 .editable-wrapper{position:relative;}' +
-                                '.forminator-custom-form-9281 .editable-wrapper.disabled{cursor:pointer;}';
+            style.textContent = '.forminator-custom-form-ABCD .forminator-input{width:100%;max-width:300px;padding:10px;border:1px solid #ccc;border-radius:4px;}' +
+                                '.forminator-custom-form-ABCD .forminator-input:disabled{color:#888;background-color:#f5f5f5;}' +
+                                '.forminator-custom-form-ABCD .bank-error-message{color:red;font-size:14px;margin-top:5px;display:none;}' +
+                                '.forminator-custom-form-ABCD .editable-wrapper{position:relative;}' +
+                                '.forminator-custom-form-ABCD .editable-wrapper.disabled{cursor:pointer;}';
             document.head.appendChild(style);
         }
 
         function initializeBankAccountValidation() {
             console.log('Initializing bank account validation at:', new Date().toISOString());
 
-            var form = document.querySelector('.forminator-custom-form-9281');
+            var form = document.querySelector('.forminator-custom-form-ABCD');
             if (!form) {
-                console.log('Form "forminator-custom-form-9281" not found');
+                console.log('Form "forminator-custom-form-ABCD" not found');
                 return false;
             }
-            console.log('Form 9281 found:', form);
+            console.log('Form ABCD found:', form);
 
             var firstEntry = form.querySelector('input[name="text-3"]');
             if (!firstEntry) {
