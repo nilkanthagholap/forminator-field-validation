@@ -29,7 +29,7 @@ This repository contains custom PHP/JavaScript code snippets to enhance the func
 
 ## Credits
 - **Developed with assistance from**: Grok 3, built by [xAI](https://xai.ai/). Grok provided invaluable debugging, optimization, and logic structuring throughout the development process.
-- **Special thanks to**: The [Forminator team](https://github.com/wpmudev/forminator) at WPMU DEV for creating a flexible form plugin that made this customization possible.
+- **Special thanks to**: The [Forminator team]([(https://github.com/wpmudev/forminator-ui)] at WPMU DEV for creating a flexible form plugin that made this customization possible.
 
 ## Tags
 - @wpmudev (Forminator team)
